@@ -1,0 +1,35 @@
+/* pages/manag_user/manag_user.wxss */
+
+
+.user{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+}
+.photo{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(215, 216, 216);
+  border-radius: 10rpx;
+  
+}
+.username{
+  width: 30%;
+  height: 100%;
+  padding-left: 10rpx;
+  line-height: 100rpx;
+}
+.zhanghao{
+  width: 55%;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: end;
+}
+
+.itemRoot {
+ /*  margin-left: 50rpx; */
+ width: 90%;
+ margin: 10rpx auto;
+ background-color: rgb(240, 239, 239);
+ border-radius: 20rpx;
+}

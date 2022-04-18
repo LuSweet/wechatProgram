@@ -1,0 +1,50 @@
+/* pages/manag_userdes/manag_userdes.wxss */
+
+/* .squtext{
+  font-size: 80rpx;
+  font-style: inherit;
+  color: rgb(113, 114, 218);
+} */
+
+.all{
+  width: 100%;
+  margin: 10rpx 0;
+  display: flex;
+}
+.chacha{
+  width: 10%;
+  padding-left: 4rpx;
+}
+
+ .chacha image{
+  width: 66rpx;
+  height: 66rpx;
+
+
+} 
+
+
+
+.itemRoot {
+ width: 90%;
+ background-color: rgb(240, 239, 239);
+}
+
+.imgList {
+  display: inline-block;
+}
+
+.img {
+  margin: 5rpx;
+  position: relative;
+  width: 155rpx;
+  height: 155rpx;
+}
+
+.date{
+  width: 100%;
+  background-color: rgb(219, 217, 217);
+}
+.kongbai{
+  height: 150rpx;
+}

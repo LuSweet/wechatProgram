@@ -1,0 +1,29 @@
+<!--pages/userinfor/userinfor.wxml-->
+
+
+ <view class="all">
+
+  <view class="gebufen">
+<view class="xiangmu">账号</view>
+<view>{{zhanghao}}</view>
+</view>
+
+<view class="gebufen">
+  <view class="xiangmu">用户名</view>
+<input class="abc" value="{{name}}" placeholder="请输入用户名" bindinput="getyonghuming"></input>
+</view>
+
+<view class="gebufen">
+<view class="xiangmu">头像</view>
+<image class="photo" bindtap="choosephoto" src="{{photo}}">
+</image>
+</view>
+
+
+
+ </view>
+
+
+
+<button type="primary" bindtap="Deletephoto" data-id="{{photo}}" data-src="{{photo}}">删除头像</button>
+ <button class="xiugai" type="primary" bindtap="tochangeinfor">更新个人信息</button>

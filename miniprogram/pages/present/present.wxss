@@ -1,0 +1,68 @@
+/* pages/present/present.wxss */
+.qupucontainer{
+  height: 70%;
+  width: 90%;
+  margin: 5rpx auto;
+ border: 2rpx solid rgb(161, 245, 172);
+  border-radius: 15rpx; 
+  overflow: hidden;
+}
+.title{
+  margin: 2rpx 5rpx;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+ /*  background-color: khaki; */
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  background-color: rgb(241, 146, 237);
+}
+.icon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.qupupic{
+  width: 100%;
+  height: 800rpx;
+  margin:0  auto;
+  overflow: hidden;
+}
+
+.qupuimage{
+  width: 100%;
+  height: 800rpx;
+}
+
+
+ .jiaoxuequ{
+  width: 90%;
+  margin: 10rpx  auto 0;
+} 
+
+
+.titletwo{
+  display: flex;
+  background-color: rgb(185, 247, 185);
+  border-radius: 15rpx;
+  justify-content: space-between;
+  text-align: center;
+} 
+.option{
+  width: 50%;
+  height: 80rpx;
+  line-height: 80rpx;
+  
+}
+
+
+.video{
+  width: 100%;
+  margin-top: 5rpx;
+ }
+ .video video{
+   width: 100%;
+   height: 400rpx;
+   border-radius: 15rpx;
+ }

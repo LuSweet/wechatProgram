@@ -1,0 +1,80 @@
+<!--pages/userb/userb.wxml-->
+
+<view class="view_contain">
+  <!-- 第一部分 -->
+  <view class="view_1" >
+    <view wx:if="{{loginOk}}" class="view_image_text">
+      <image class="image_radius"  src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/user-unlogin.png" bindtap="tologin"/>
+      <text>未登录</text>
+    </view>
+    <view wx:else  class="view_image_text">
+      <image class="image_radius"  src="{{userphoto}}" bindtap="tologin"/>
+      <text>{{name}}</text>
+    </view>
+  </view>
+
+  <!-- 第二部分 -->
+  <view class="view_2">
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test1.png"></image>
+      <text class="text_saoyisao">喜欢</text>
+    </view>
+    <view class="view_tupianwenzi" bindtap="tocollectpage">
+      <image class="image_tupian" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test3.png"></image>
+      <text class="text_saoyisao">收藏</text>
+    </view>
+    <view class="view_tupianwenzi" bindtap="toliuyan">
+      <image class="image_tupian" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test4.png"></image>
+      <text class="text_saoyisao">留言</text>
+    </view>
+    <view class="view_tupianwenzi">
+      <image class="image_tupian" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test7.png"></image>
+      <text class="text_saoyisao">曲谱</text>
+    </view>
+
+  </view>
+
+
+  <!-- 第三部分 -->
+  <view class="view_3" >
+    <view class="list-item" bindtap="touserinfor">
+      <image class="item-image" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test5.png"></image>
+      <text class="item-text">个人信息</text>
+      <image class="image-jiantou" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test6.png"></image>
+      <text class="item-text">最新通知</text>
+      <image class="image-jiantou" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test2.png"></image>
+      <text class="item-text">建议反馈</text>
+      <image class="image-jiantou" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+
+    <view class="list-item" bindtap="tomanager">
+      <image class="item-image" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test8.png"></image>
+      <text class="item-text">后台管理</text>
+      <image class="image-jiantou" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+
+    <view class="list-item">
+      <image class="item-image" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/test9.png"></image>
+      <text class="item-text">分享邀请</text>
+      <image class="image-jiantou" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/jiantou.png"></image>
+    </view>
+    <view class="line"></view>
+
+  </view>
+
+ <!-- 退出 -->
+  <button class="btn"  type="primary"  bindtap="quit" >退出登录</button>
+</view>
+

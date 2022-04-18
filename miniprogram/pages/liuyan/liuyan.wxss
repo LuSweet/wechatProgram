@@ -1,0 +1,33 @@
+/* pages/liuyan/liuyan.wxss */
+
+.squtext{
+  font-size: 80rpx;
+  font-style: inherit;
+  color: rgb(113, 114, 218);
+}
+
+.itemRoot {
+ width: 90%;
+ margin: 10rpx auto;
+ background-color: rgb(240, 239, 239);
+ border-radius: 10rpx;
+}
+
+.imgList {
+  display: inline-block;
+}
+
+.img {
+  margin: 5rpx;
+  position: relative;
+  width: 155rpx;
+  height: 155rpx;
+}
+
+.date{
+  width: 100%;
+  background-color: rgb(219, 217, 217);
+}
+.kongbai{
+  height: 150rpx;
+}

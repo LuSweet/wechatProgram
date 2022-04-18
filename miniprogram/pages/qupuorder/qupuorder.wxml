@@ -1,0 +1,14 @@
+<!--pages/qupuorder/qupuorder.wxml-->
+<view class="threepart">
+  <text class="title">曲库</text>
+  <view class="qupucontainer" wx:for="{{qupu}}" wx:key="_id" data-song="{{item}}" bindtap="toupdata">
+   <!--  <image src="../../images/close.png" class="icon"></image> -->
+    <image class="qupupic" src="{{item.src}}"></image>
+    <view class="song">
+   
+      <text class="songname">{{item.songname}}</text>
+    <view class="songtype">{{item.songtype}}</view>
+
+    </view>
+  </view>
+</view>

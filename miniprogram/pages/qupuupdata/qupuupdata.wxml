@@ -1,0 +1,83 @@
+<!--pages/qupuupdata/qupuupdata.wxml-->
+<view class="all">
+<!-- 第一部分 -->
+<view class="quming">
+    <view class="one">
+      曲名 <input class="inputstyle" placeholder="请输入歌曲名" value="{{qupuname}}" bindinput="getquming"></input>
+    </view>
+  </view>
+
+  <!-- 第二部分 -->
+  <view class="quming">
+    <view class="one">
+    类型： <input class="inputstyle" placeholder="请输入乐器类型" value="{{quputype}}" bindinput="gettype"></input>
+    </view>
+  </view>
+
+<!-- 第三部分 封面图片 -->
+<view>
+<view>封面上传：</view>
+<view class="iamgeRootAll">
+         <!-- 有图片 -->
+         <view wx:if="{{fenmian}}"  class="imgfenmian">
+      <image class="img" src='{{fenmian}}' mode='aspectFill'></image>
+      <image class="closeImg" bindtap="Deletefenmian" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/close.png" data-id="{{index}}" data-src="{{item}}"></image>
+  </view>
+  
+  <!-- 选择图片按钮  无图片-->
+  <view wx:else  class="imgfenmian" bindtap="Choosefenmian">
+    <image class="photo" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/photo.png"></image>
+  </view>
+
+ 
+</view>
+
+
+</view>
+
+ 
+  
+
+  <!-- 第四部分 曲谱上传 -->
+  <view>
+  <view>曲谱上传：</view>
+  <view class="iamgeRootAll">
+  <block wx:for="{{qupupic}}" wx:key="index">
+    <view class="imgItem">
+      <image class="img" src='{{item}}' mode='aspectFill'></image>
+      <image class="closeImg" bindtap="DeleteImg2" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/close.png" data-id="{{index}}" data-src="{{item}}"></image>
+    </view>
+  </block>
+     <!-- 选择图片按钮 -->
+  <view wx:if="{{qupupic.length<3}}" class="imgItem" bindtap="ChooseImage2">
+    <image class="photo" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/photo.png"></image>
+  </view>
+</view>
+</view>
+
+
+
+
+ <!-- 演示视频上传 -->
+ <view>
+  <button class="videobtn" type="primary" size="mini" bindtap="uploadVideo">演示视频</button>
+    <view>
+      <video  class="qupuvideo" src="{{VideoUrl}}"></video>
+    </view>
+</view>
+
+
+ <!-- 教学视频上传 -->
+ <view>
+  <button class="videobtn" type="primary" size="mini" bindtap="uploadVideotwo">教学视频</button>
+    <view>
+      <video  class="qupuvideo" src="{{VideoUrltwo}}"></video>
+    </view>
+</view>
+
+
+
+<button type="primary" bindtap="publish">发布曲谱</button>
+<button type="warn" bindtap="deletequpu">删除本曲</button>
+
+</view>

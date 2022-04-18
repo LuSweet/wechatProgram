@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/squareb/squareb",
+    "pages/userinfor/userinfor",
+    "pages/manageradd/manageradd",
+    "pages/manager/manager",
+    "pages/mangerlogin/managerlogin",
+    "pages/present/present",
+    "pages/userb/userb",
+    "pages/learnb/learnb",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/tuijian/tuijian",
+    "pages/search/search",
+    "pages/qupuorder/qupuorder",
+    "pages/qupuupdata/qupuupdata",
+    "pages/collection/collection",
+    "pages/learncontent/learncontent",
+    "pages/share/share",
+    "pages/liuyan/liuyan",
+    "pages/manag_user/manag_user",
+    "pages/manag_userdes/manag_userdes"
+  ],
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/11.png",
+        "iconPath": "images/1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/22.png",
+        "iconPath": "images/2.png",
+        "pagePath": "pages/learnb/learnb",
+        "text": "学习"
+      },
+      {
+        "selectedIconPath": "images/33.png",
+        "iconPath": "images/3.png",
+        "pagePath": "pages/squareb/squareb",
+        "text": "广场"
+      },
+      {
+        "selectedIconPath": "images/44.png",
+        "iconPath": "images/4.png",
+        "pagePath": "pages/userb/userb",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0f",
+    "navigationBarTitleText": "乐趣",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

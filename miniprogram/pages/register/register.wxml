@@ -1,0 +1,29 @@
+<!--pages/register/register.wxml-->
+
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">Register</view>
+    <view class="welcome">
+      请先注册！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <text class="tit">用户名</text>
+        <input  type="text" placeholder="请设置2~8位用户名" bindinput="getUserName" ></input>
+      </view>
+      <view class="input-item">
+        <text class="tit">账号</text>
+        <input  type="text" placeholder="请输入手机号码" bindinput="getZhangHao"></input>
+      </view>
+      <view class="input-item">
+        <text class="tit">请设置密码</text>
+        <input type="password"  placeholder="请输入至少8位个人密码" bindinput="getMiMa" ></input>
+      </view>
+    </view>
+
+    <button class="zhuce-btn" bindtap="zhuce">注册</button>
+   
+  </view>
+
+</view>
+

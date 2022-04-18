@@ -1,0 +1,54 @@
+<!-- 搜索框 -->
+<view class="search">
+  <input placeholder="请输入曲名"  bindconfirm="search" confirm-type="done"></input>
+  <image src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/search.png" style="width:50rpx;height:50rpx"></image>
+</view>
+
+<!-- 第一部分 轮播图 -->
+<view>
+  <swiper class="picsty" autoplay="true" indicator-dots='true' circular='true' interval='1000'>
+    <block wx:for="{{banner}}" wx:key="_id">
+    <swiper-item>
+     <image src="{{item.src}}" mode="aspectFill"></image>
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+
+
+<!-- 第二部分 分类区域 -->
+<view class="twopart">
+
+  <view class="fenlei">
+    <image  src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/fenleiarea/introduce.png" class="fenlei_1" bindtap="totuijian"></image>
+    <text style="font-size:30rpx">推荐</text>
+  </view>
+
+  <view class="fenlei">
+    <image  src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/fenleiarea/qupu.png" class="fenlei_1"></image>
+    <text style="font-size:30rpx">曲谱</text>
+  </view>
+
+  <view class="fenlei">
+    <image  src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/fenleiarea/fenlei.png" class="fenlei_1" bindtap="tofenlei"></image>
+    <text style="font-size:30rpx">分类</text>
+  </view>
+
+  <view class="fenlei">
+    <image  src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/fenleiarea/paihang.png" class="fenlei_1"></image>
+    <text style="font-size:30rpx">排行</text>
+  </view>
+ 
+</view>
+
+<!-- 第三部分 热门曲谱展示 -->
+<view class="threepart">
+  <text class="title">热门曲子</text>
+  <view class="qupucontainer" wx:for="{{qupu}}" wx:key="_id" data-song="{{item}}" bindtap="tolearn">
+    <image class="qupupic" src="{{item.src}}"></image>
+    <view class="song">
+      <text class="songname">{{item.songname}}</text>
+    <view class="songtype">{{item.songtype}}</view>
+    </view>
+  </view>
+</view>

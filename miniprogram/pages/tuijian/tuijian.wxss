@@ -1,0 +1,42 @@
+/* pages/tuijian/tuijian.wxss */
+
+.threepart{
+  display: flex;
+  flex-direction: column;
+   width: 90%;
+  margin: 8rpx auto 0;
+ background-color: #f6f6fc;
+  border-radius: 25rpx;
+}
+
+.title{
+ margin: 0 auto;
+}
+.qupucontainer{
+  width: 100%;
+
+  margin:5rpx 10rpxx;
+  display: flex;
+}
+
+.qupupic{
+  height: 100rpx;
+  width: 120rpx;
+  margin:3rpx 10rpx;
+  border-radius: 10rpx;
+}
+.song{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.songname{
+  align-self: center;
+}
+
+.songtype{
+  align-self: center;
+  font-size: 30rpx;
+  background-color: rgb(248, 117, 137);
+  border-radius: 10rpx;
+}

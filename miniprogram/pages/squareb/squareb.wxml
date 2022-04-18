@@ -1,0 +1,28 @@
+<!--pages/squareb/squareb.wxml-->
+<block wx:for="{{dataList}}" wx:key="index">
+  <view class="itemRoot">
+      <view class="user">
+        <image class="photo" src="{{item.userinfo.userphoto}}"></image>
+        <view class="username">{{item.userinfo.username}}</view>
+      </view>
+
+    <view>
+      <text class="desc">{{item.desc}}</text>
+    </view>
+    <view class="imgRoot">
+      <block class="imgList" wx:for="{{item.fileIDs}}" wx:for-item="itemImg" wx:key="index">
+        <image class="img" src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+      </block>
+    </view>
+    <view class="date">
+      <text>{{item.date}}</text>
+    </view>
+   
+  </view>
+</block>
+
+<view class="kongbai"></view>
+
+
+
+<view class="fabu" bindtap="toshare">发布动态</view>

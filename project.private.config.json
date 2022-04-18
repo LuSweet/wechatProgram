@@ -1,0 +1,102 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/register/register",
+          "pathName": "pages/register/register",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/manager/manager",
+          "pathName": "pages/manager/manager",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/share/share",
+          "pathName": "pages/share/share",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/manageradd/manageradd",
+          "pathName": "pages/manageradd/manageradd",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/qupuorder/qupuorder",
+          "pathName": "pages/qupuorder/qupuorder",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/collection/collection",
+          "pathName": "pages/collection/collection",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/present/present",
+          "pathName": "pages/present/present",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userinfor/userinfor",
+          "pathName": "pages/userinfor/userinfor",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userb/userb",
+          "pathName": "pages/userb/userb",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/squareb/squareb",
+          "pathName": "pages/squareb/squareb",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/learnb/learnb",
+          "pathName": "pages/learnb/learnb",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/liuyan/liuyan",
+          "pathName": "pages/liuyan/liuyan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/manag_user/manag_user",
+          "pathName": "pages/manag_user/manag_user",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

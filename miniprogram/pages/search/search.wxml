@@ -1,0 +1,11 @@
+<!--pages/search/search.wxml-->
+<view class="threepart">
+  <text class="title">搜索结果:</text>
+  <view class="qupucontainer" wx:for="{{search}}" wx:key="_id" data-song="{{item}}" bindtap="tolearn">
+    <image class="qupupic" src="{{item.src}}"></image>
+    <view class="song">
+      <text class="songname">{{item.songname}}</text>
+    <view class="songtype">{{item.songtype}}</view>
+    </view>
+  </view>
+</view>

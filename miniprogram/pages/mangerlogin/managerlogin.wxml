@@ -1,0 +1,26 @@
+<!--pages/mangerlogin/managerlogin.wxml-->
+
+<view class="container">
+  <view class="wrapper">
+    <view class="left-top-sign">Manager</view>
+    <view class="welcome">
+      管理员登录！
+    </view>
+    <view class="input-content">
+      <view class="input-item">
+        <text class="tit">管理员账号</text>
+        <input  type="text" placeholder="请输入管理员号码" bindinput="getZhangHao"></input>
+      </view>
+      <view class="input-item">
+        <text class="tit">管理员密码</text>
+        <input type="password"  placeholder="请输入管理员密码" bindinput="getMiMa" ></input>
+      </view>
+    </view>
+
+    <button class="zhuce-btn" bindtap="tomanager">进入管理后台</button>
+   
+  </view>
+
+</view>
+
+

@@ -1,0 +1,11 @@
+<!--pages/tuijian/tuijian.wxml-->
+<view class="threepart">
+  <text class="title">推荐热曲</text>
+  <view class="qupucontainer" wx:for="{{qupu}}" wx:key="_id" data-song="{{item}}" bindtap="tolearn">
+    <image class="qupupic" src="{{item.src}}"></image>
+    <view class="song">
+      <text class="songname">{{item.songname}}</text>
+    <view class="songtype">{{item.songtype}}</view>
+    </view>
+  </view>
+</view>

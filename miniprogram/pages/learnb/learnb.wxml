@@ -1,0 +1,11 @@
+<!--pages/learnb/learnb.wxml-->
+<view class="view_3" wx:for="{{kechen}}" wx:key="_id" bindtap="tocontent" data-song="{{item}}">
+    <view class="kechen">
+      <image class="kechen-image" src="{{item.src}}"></image>
+    <view class="kechen-information">
+      <text class="kechen-name">{{item.name}}课程</text>
+      <text class="kechen-time">共{{item.time}}课时</text>
+    </view>
+    </view>
+    <view class="line"></view>
+  </view>

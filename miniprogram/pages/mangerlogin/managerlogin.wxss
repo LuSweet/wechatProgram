@@ -1,0 +1,66 @@
+/* pages/mangerlogin/managerlogin.wxss */
+
+.wrapper{
+  position:relative;
+  z-index: 90;
+  padding-bottom: 40rpx;
+}
+
+.left-top-sign{
+  font-size: 120rpx;
+  color: #8cc0f0;
+  position:relative;
+  left: -16rpx;
+}
+
+.welcome{
+  color: #353434;
+  position:relative;
+  left: 50rpx;
+  top: -90rpx;
+  font-size: 46rpx;
+
+}
+
+
+.input-content{
+  padding: 0 60rpx;
+}
+.input-item{
+  display:flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  padding: 0 30rpx;
+  background:#f8f6fc;
+  height: 120rpx;
+  border-radius: 4px;
+  margin-bottom: 50rpx;
+}
+
+.input-item:last-child{
+  margin-bottom: 0;
+}
+.input-item .tit{
+  height: 50rpx;
+  line-height: 56rpx;
+  font-size: 30rpx;
+  color: #606266;
+}
+.input-item input{
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #303133;
+  width: 100%;
+}
+.zhuce-btn{
+  width: 630rpx!important;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50rpx;
+  margin-top: 70rpx;
+  background-color: #638fee;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 0;
+}

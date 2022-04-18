@@ -1,0 +1,28 @@
+<!--pages/present/present.wxml-->
+
+<view class="qupucontainer">
+  <view class="title">
+    <view >{{qupuname}}</view>
+    <image wx:if="{{!collectsign}}" class="icon" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/collectiona.png" bindtap="tocollect"></image>
+    <image wx:else class="icon" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/collectionb.png" bindtap="tocollect"></image>
+  </view>
+  <swiper class="qupupic" indicator-dots='true' circular='true' interval='1000'>
+   <block wx:for="{{quputupian}}" wx:key="index">
+    <swiper-item>
+     <image class="qupuimage" src="{{item}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+<view class="jiaoxuequ">
+  <view class="titletwo" >
+    <view class="option" bindtap="toyanShi">演示</view>
+    <view class="option" bindtap="toteach">教学</view>
+  </view>
+  <view wx:if="{{yanShi}}" class="video">
+    <video wx:if="{{qupuvideo.video1}}" src="{{qupuvideo.video1}}"></video>
+  </view>
+  <view wx:else class="video">
+    <video wx:if="{{qupuvideo.video2}}"  src="{{qupuvideo.video2}}"></video>
+  </view>
+</view>

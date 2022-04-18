@@ -1,0 +1,29 @@
+<!--pages/collection/collection.wxml-->
+
+<view class="threepart">
+  <block  wx:for="{{qupu}}" wx:key="_id">
+  <view class="qupucontainer">
+    <checkbox-group bindchange="xuanze" data-id="{{item._id}}">
+    <checkbox value="{{item._id}}"></checkbox>
+  </checkbox-group>
+    <image class="qupupic" src="{{item.src}}" data-song="{{item}}" bindtap="tolearn"></image>
+    <view class="song" data-song="{{item}}" bindtap="tolearn">
+      <text class="songname">{{item.songname}}</text>
+    <view class="songtype">{{item.songtype}}</view>
+    </view>
+  </view>
+
+</block>
+
+
+</view>
+
+
+<view class="anniu">
+  <view class="caozoua" bindtap="deletecollect">
+    <view> 删除曲子</view> 
+  </view>
+  <view class="caozoub">
+    <view> 客服答疑</view> 
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/manag_user/manag_user.wxml-->
+<view class="itemRoot"  wx:for="{{user}}" wx:key="_id" bindtap="tocontent" data-song="{{item}}">
+  <view class="user"  >
+      <image class="photo" src="{{item.userphoto}}"></image>
+      <view class="username">{{item.username}}</view>
+      <view class="zhanghao">{{item.userzhanghao}}</view>
+  </view>
+</view>

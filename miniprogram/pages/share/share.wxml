@@ -1,0 +1,16 @@
+<!--pages/share/share.wxml-->
+<textarea class="desc" placeholder="请输入内容" bindinput="getInput"/>
+<view class="iamgeRootAll">
+  <block wx:for="{{imgList}}" wx:key="index">
+    <view class="imgItem">
+      <image class="img" src='{{item}}' mode='aspectFill'></image>
+      <image class="closeImg" bindtap="DeleteImg" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/close.png" data-index="{{index}}"></image>
+    </view>
+  </block>
+  <!-- 选择图片按钮 -->
+  <view wx:if="{{imgList.length<8}}" class="imgItem" bindtap="ChooseImage">
+    <image class="photo" src="cloud://cloud1-7gaeksay63023d5a.636c-cloud1-7gaeksay63023d5a-1305291075/image/tubiao/photo.png"></image>
+  </view>
+</view>
+
+<button type="primary" bindtap="publish">发布朋友圈</button>
